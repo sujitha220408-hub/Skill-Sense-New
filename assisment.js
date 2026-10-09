@@ -3,12 +3,12 @@ const skillImage = document.getElementById("skillImage");
 const skillName = document.getElementById("skillName");
 
 const skillImages = {
-    "Programming": "images/programming.jpeg",
-    "Web Development": "images/web-development.jpeg",
-    "Database": "images/database.jpeg",
-    "Problem Solving": "images/problem-solving.jpeg",
-    "Teamwork & Communication": "images/teamwork.jpeg",
-    "Interview Skills": "images/interview.jpeg"
+    "Programming": "programming.jpeg",
+    "Web Development": "web-development.jpeg",
+    "Database": "database.jpeg",
+    "Problem Solving": "problem-solving.jpeg",
+    "Teamwork & Communication": "teamwork.jpeg",
+    "Interview Skills": "interview.jpeg"
 };
 
 skillImage.src = skillImages[skill] || "";
