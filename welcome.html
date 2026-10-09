@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Skill Sense - Welcome</title>
+
+    <link rel="stylesheet" href="welcome.css">
+</head>
+
+<body>
+
+    <div class="welcome-container">
+
+
+        <!-- =========================
+             CONTENT SECTION
+        ========================== -->
+
+        <div class="content-section">
+
+            <h1 id="message">
+                Hi User 👋
+            </h1>
+
+            <p>
+                Welcome to our AI Assistant 🤖
+            </p>
+
+            <button
+                class="start-btn"
+                onclick="startAssessment()"
+            >
+                Let's Start Assessment →
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             ROBOT SECTION
+        ========================== -->
+
+        <div class="robot-section">
+
+            <img
+                src="images/robo.jpeg"
+                alt="Skill Sense AI Robot"
+            >
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+
+        /* =========================
+           USER NAME
+        ========================= */
+
+        const userName =
+            localStorage.getItem("userName") || "User";
+
+
+        const message =
+            document.getElementById("message");
+
+
+        /* =========================
+           WELCOME MESSAGE
+        ========================= */
+
+        message.textContent =
+            "Hi " + userName + " 👋";
+
+
+        /* =========================
+           START ASSESSMENT
+        ========================= */
+
+        function startAssessment() {
+
+            window.location.href =
+                "assessment-select.html";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
